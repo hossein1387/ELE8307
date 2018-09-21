@@ -1,0 +1,144 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: ip-generate --project-directory=U:/ELE8307/Lab2/QuartusProj/ --output-directory=U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/ --report-file=bsf:U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.bsf --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.qsys
+Progress: Loading QuartusProj/sys_systemsolaire.qsys
+Progress: Reading input file
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding timer_0 [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_0
+Progress: Adding timestamp_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timestamp_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding vga_0 [vga 1.1.1]
+Progress: Parameterizing module vga_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_systemsolaire.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: sys_systemsolaire.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: sys_systemsolaire.vga: The sim_vhdl fileset must specify the top-level module name.
+Info: ip-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: ip-generate --project-directory=U:/ELE8307/Lab2/QuartusProj/ --output-directory=U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/ --file-set=QUARTUS_SYNTH --report-file=sopcinfo:U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.sopcinfo --report-file=html:U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.html --report-file=qip:U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/sys_systemsolaire.qip --report-file=cmp:U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.cmp --report-file=svd --system-info=DEVICE_FAMILY="Cyclone II" --system-info=DEVICE=EP2C35F672C6 --system-info=DEVICE_SPEEDGRADE=6 --component-file=U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire.qsys --language=VERILOG
+Progress: Loading QuartusProj/sys_systemsolaire.qsys
+Progress: Reading input file
+Progress: Adding nios2_qsys_0 [altera_nios2_qsys 13.0]
+Progress: Parameterizing module nios2_qsys_0
+Progress: Adding clk_0 [clock_source 13.0]
+Progress: Parameterizing module clk_0
+Progress: Adding new_sdram_controller_0 [altera_avalon_new_sdram_controller 13.0.1.99.2]
+Progress: Parameterizing module new_sdram_controller_0
+Progress: Adding jtag_uart_0 [altera_avalon_jtag_uart 13.0.1.99.2]
+Progress: Parameterizing module jtag_uart_0
+Progress: Adding timer_0 [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timer_0
+Progress: Adding timestamp_timer [altera_avalon_timer 13.0.1.99.2]
+Progress: Parameterizing module timestamp_timer
+Progress: Adding sysid [altera_avalon_sysid_qsys 13.0]
+Progress: Parameterizing module sysid
+Progress: Adding vga_0 [vga 1.1.1]
+Progress: Parameterizing module vga_0
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: sys_systemsolaire.sysid: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: sys_systemsolaire.sysid: Time stamp will be automatically updated when this component is generated.
+Warning: sys_systemsolaire.vga: The sim_vhdl fileset must specify the top-level module name.
+Info: sys_systemsolaire: Generating sys_systemsolaire "sys_systemsolaire" for QUARTUS_SYNTH
+Info: pipeline_bridge_swap_transform: After transform: 8 modules, 26 connections
+Info: No custom instruction connections, skipping transform 
+Info: merlin_translator_transform: After transform: 17 modules, 53 connections
+Info: merlin_domain_transform: After transform: 35 modules, 145 connections
+Info: merlin_router_transform: After transform: 44 modules, 172 connections
+Info: merlin_traffic_limiter_transform: After transform: 46 modules, 180 connections
+Info: merlin_burst_transform: After transform: 47 modules, 183 connections
+Info: reset_adaptation_transform: After transform: 48 modules, 185 connections
+Info: merlin_network_to_switch_transform: After transform: 65 modules, 221 connections
+Info: merlin_width_transform: After transform: 67 modules, 227 connections
+Info: limiter_update_transform: After transform: 67 modules, 229 connections
+Info: merlin_mm_transform: After transform: 67 modules, 229 connections
+Info: merlin_interrupt_mapper_transform: After transform: 68 modules, 232 connections
+Info: nios2_qsys_0: Starting RTL generation for module 'sys_systemsolaire_nios2_qsys_0'
+Info: nios2_qsys_0:   Generation command is [exec C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/eperl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/cpu_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/nios_lib -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -I C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2 -- C:/altera/13.0sp1/quartus/../ip/altera/nios2_ip/altera_nios2/generate_rtl.epl --name=sys_systemsolaire_nios2_qsys_0 --dir=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0001_nios2_qsys_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0001_nios2_qsys_0_gen//sys_systemsolaire_nios2_qsys_0_processor_configuration.pl  --do_build_sim=0    --bogus  ]
+Info: nios2_qsys_0: # 2018.09.12 16:40:19 (*) Starting Nios II generation
+Info: nios2_qsys_0: # 2018.09.12 16:40:19 (*)   Checking for plaintext license.
+Info: nios2_qsys_0: # 2018.09.12 16:40:20 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2018.09.12 16:40:20 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2018.09.12 16:40:50 (*)   Plaintext license not found.
+Info: nios2_qsys_0: # 2018.09.12 16:40:50 (*)   Checking for encrypted license (non-evaluation).
+Info: nios2_qsys_0: # 2018.09.12 16:40:50 (*)   Couldn't query license setup in Quartus directory C:/altera/13.0sp1/quartus
+Info: nios2_qsys_0: # 2018.09.12 16:40:50 (*)   Defaulting to contents of LM_LICENSE_FILE environment variable
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)   Encrypted license found.  SOF will not be time-limited.
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)   Elaborating CPU configuration settings
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)   Creating all objects for CPU
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)     Testbench
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)     Instruction decoding
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)       Instruction fields
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)       Instruction decodes
+Info: nios2_qsys_0: # 2018.09.12 16:41:21 (*)       Signals for RTL simulation waveforms
+Info: nios2_qsys_0: # 2018.09.12 16:41:22 (*)       Instruction controls
+Info: nios2_qsys_0: # 2018.09.12 16:41:22 (*)     Pipeline frontend
+Info: nios2_qsys_0: # 2018.09.12 16:41:22 (*)     Pipeline backend
+Info: nios2_qsys_0: # 2018.09.12 16:41:24 (*)   Generating RTL from CPU objects
+Info: nios2_qsys_0: # 2018.09.12 16:41:27 (*)   Creating encrypted RTL
+Info: nios2_qsys_0: # 2018.09.12 16:41:28 (*) Done Nios II generation
+Info: nios2_qsys_0: Done RTL generation for module 'sys_systemsolaire_nios2_qsys_0'
+Info: nios2_qsys_0: "sys_systemsolaire" instantiated altera_nios2_qsys "nios2_qsys_0"
+Info: new_sdram_controller_0: Starting RTL generation for module 'sys_systemsolaire_new_sdram_controller_0'
+Info: new_sdram_controller_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=sys_systemsolaire_new_sdram_controller_0 --dir=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0002_new_sdram_controller_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0002_new_sdram_controller_0_gen//sys_systemsolaire_new_sdram_controller_0_component_configuration.pl  --do_build_sim=0  ]
+Info: new_sdram_controller_0: Done RTL generation for module 'sys_systemsolaire_new_sdram_controller_0'
+Info: new_sdram_controller_0: "sys_systemsolaire" instantiated altera_avalon_new_sdram_controller "new_sdram_controller_0"
+Info: jtag_uart_0: Starting RTL generation for module 'sys_systemsolaire_jtag_uart_0'
+Info: jtag_uart_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=sys_systemsolaire_jtag_uart_0 --dir=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0003_jtag_uart_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0003_jtag_uart_0_gen//sys_systemsolaire_jtag_uart_0_component_configuration.pl  --do_build_sim=0  ]
+Info: jtag_uart_0: Done RTL generation for module 'sys_systemsolaire_jtag_uart_0'
+Info: jtag_uart_0: "sys_systemsolaire" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: timer_0: Starting RTL generation for module 'sys_systemsolaire_timer_0'
+Info: timer_0:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=sys_systemsolaire_timer_0 --dir=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0004_timer_0_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0004_timer_0_gen//sys_systemsolaire_timer_0_component_configuration.pl  --do_build_sim=0  ]
+Info: timer_0: Done RTL generation for module 'sys_systemsolaire_timer_0'
+Info: timer_0: "sys_systemsolaire" instantiated altera_avalon_timer "timer_0"
+Info: timestamp_timer: Starting RTL generation for module 'sys_systemsolaire_timestamp_timer'
+Info: timestamp_timer:   Generation command is [exec C:/altera/13.0sp1/quartus/bin/perl/bin/perl.exe -I C:/altera/13.0sp1/quartus/common/ip/altera/common/perl/5.8.3 -I C:/altera/13.0sp1/quartus/sopc_builder/bin/europa -I C:/altera/13.0sp1/quartus/sopc_builder/bin/perl_lib -I C:/altera/13.0sp1/quartus/sopc_builder/bin -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/common -I C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer -- C:/altera/13.0sp1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_timer/generate_rtl.pl --name=sys_systemsolaire_timestamp_timer --dir=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0005_timestamp_timer_gen/ --quartus_dir=C:/altera/13.0sp1/quartus --verilog --config=C:/Users/ELE830~1/AppData/Local/Temp/alt7786_3735423243450988060.dir/0005_timestamp_timer_gen//sys_systemsolaire_timestamp_timer_component_configuration.pl  --do_build_sim=0  ]
+Info: timestamp_timer: Done RTL generation for module 'sys_systemsolaire_timestamp_timer'
+Info: timestamp_timer: "sys_systemsolaire" instantiated altera_avalon_timer "timestamp_timer"
+Info: sysid: "sys_systemsolaire" instantiated altera_avalon_sysid_qsys "sysid"
+Info: vga_0: "sys_systemsolaire" instantiated vga "vga_0"
+Info: nios2_qsys_0_data_master_translator: "sys_systemsolaire" instantiated altera_merlin_master_translator "nios2_qsys_0_data_master_translator"
+Info: new_sdram_controller_0_s1_translator: "sys_systemsolaire" instantiated altera_merlin_slave_translator "new_sdram_controller_0_s1_translator"
+Info: nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent: "sys_systemsolaire" instantiated altera_merlin_master_agent "nios2_qsys_0_data_master_translator_avalon_universal_master_0_agent"
+Info: new_sdram_controller_0_s1_translator_avalon_universal_slave_0_agent: "sys_systemsolaire" instantiated altera_merlin_slave_agent "new_sdram_controller_0_s1_translator_avalon_universal_slave_0_agent"
+Info: new_sdram_controller_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo: "sys_systemsolaire" instantiated altera_avalon_sc_fifo "new_sdram_controller_0_s1_translator_avalon_universal_slave_0_agent_rsp_fifo"
+Info: addr_router: "sys_systemsolaire" instantiated altera_merlin_router "addr_router"
+Info: addr_router_001: "sys_systemsolaire" instantiated altera_merlin_router "addr_router_001"
+Info: id_router: "sys_systemsolaire" instantiated altera_merlin_router "id_router"
+Info: id_router_001: "sys_systemsolaire" instantiated altera_merlin_router "id_router_001"
+Info: id_router_006: "sys_systemsolaire" instantiated altera_merlin_router "id_router_006"
+Info: limiter: "sys_systemsolaire" instantiated altera_merlin_traffic_limiter "limiter"
+Info: burst_adapter: "sys_systemsolaire" instantiated altera_merlin_burst_adapter "burst_adapter"
+Info: rst_controller: "sys_systemsolaire" instantiated altera_reset_controller "rst_controller"
+Info: cmd_xbar_demux: "sys_systemsolaire" instantiated altera_merlin_demultiplexer "cmd_xbar_demux"
+Info: cmd_xbar_demux_001: "sys_systemsolaire" instantiated altera_merlin_demultiplexer "cmd_xbar_demux_001"
+Info: cmd_xbar_mux: "sys_systemsolaire" instantiated altera_merlin_multiplexer "cmd_xbar_mux"
+Info: rsp_xbar_demux: "sys_systemsolaire" instantiated altera_merlin_demultiplexer "rsp_xbar_demux"
+Info: rsp_xbar_demux_001: "sys_systemsolaire" instantiated altera_merlin_demultiplexer "rsp_xbar_demux_001"
+Info: rsp_xbar_mux: "sys_systemsolaire" instantiated altera_merlin_multiplexer "rsp_xbar_mux"
+Info: Reusing file U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: rsp_xbar_mux_001: "sys_systemsolaire" instantiated altera_merlin_multiplexer "rsp_xbar_mux_001"
+Info: Reusing file U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/submodules/altera_merlin_arbitrator.sv
+Info: width_adapter: "sys_systemsolaire" instantiated altera_merlin_width_adapter "width_adapter"
+Info: Reusing file U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/submodules/altera_merlin_address_alignment.sv
+Info: Reusing file U:/ELE8307/Lab2/QuartusProj/sys_systemsolaire/synthesis/submodules/altera_merlin_burst_uncompressor.sv
+Info: irq_mapper: "sys_systemsolaire" instantiated altera_irq_mapper "irq_mapper"
+Info: sys_systemsolaire: Done sys_systemsolaire" with 30 modules, 93 files, 2121493 bytes
+Info: ip-generate succeeded.
+Info: Finished: Create HDL design files for synthesis
